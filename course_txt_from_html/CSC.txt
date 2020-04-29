@@ -1,0 +1,355 @@
+CSC 1010	Computers and Applications
+Credit Hours	3.0
+Prerequisites	high school Algebra II
+Description	
+This course is intended for non-computer science majors. It provides an overview of selected major areas of current computing technology, organization and use. Topics surveyed include the history of computing, data representation and storage, hardware and software organization, communications, networking, and Internet technologies, and ethical and social issues.
+
+CSC 1301	Principles of Computer Science I
+Credit Hours	4.0
+Description	
+Prerequisite or co-requisite: MATH 1112 or MATH 1113 with a C or higher, or appropriate math placement score. Only for majors in Computer Science, Mathematics, Physics or Engineering, or minor in Computer Science. An introduction to the discipline of computer science. Computer programming is the primary focus of the course, with secondary focus on a breadth of computer science topics. These topics include algorithmic foundations, hardware concepts, virtual machine concepts, software systems, applications, and social issues.
+
+CSC 1302	Principles of Computer Science II
+Credit Hours	4.0
+Prerequisites	CSC 1301 with a "C" or higher
+Description	
+Fundamental principles of computer programming. Expressions, procedures, variable types, data, input/output. Emphasis on structure and clarity as well as correctness.
+
+CSC 2301	Introduction to Python Programming
+Credit Hours	3.0
+Description	
+This class introduces students to computer programming, with particular focus on Python programming. No prior programming experience is required. The class emphasizes design principles (e.g., pseudocode, stepwise refinement, object-oriented design as well as the syntax and semantics of an appropriate language. This class is for non-majors interested in obtaining some fundamental computer programming skills.
+
+CSC 2302	Python Programming for Data Science
+Credit Hours	3.0
+Prerequisites	CSC 1301 or CSC 2301 with a C or higher, or permission of instructor
+Description	
+This course is the second of a two-course sequence that introduces advanced computer programming, with a focus on Python programming. Topics include: Object-Oriented Programming, Recursion, Graphical User Interface (GUI) development, database development, and Internet and distributed computing. Heavy focus on data science applications and problems.
+
+CSC 2320	Fundamentals of Website Development
+Credit Hours	3.0
+Prerequisites	familiarity with basic programming language concepts
+Description	
+This course provides a foundation for developing dynamic websites and web applications. The first part covers the front-end aspects of web development: creating, designing, and publishing content using HTML, CSS, and JavaScript. The second covers the back-end aspects: using programming languages to generate, manipulate, and manage content (CGI, cookies, server-side scripting), and accessing a database using SQL for common website tasks (forms, user registration). While this course covers web development concepts that are applicable to most popular platforms, it is significantly hands-on. A major component is a final project involving implementing a dynamic website.
+
+CSC 2510	Theoretical Foundations of Computer Science
+Credit Hours	3.0
+Prerequisites	CSC 1301 and (MATH 1112 or MATH 1113 or MATH 2211) with grade C or higher
+Description	
+This course covers the basic theoretical foundations required to study various sub-disciplines in computer science. Topics include: propositional and predicate logic with applications to logic programming, database querying, and program verification; induction and its application in proving correctness and termination of programs; recurrence relations, combinatorics, and graph theory with applications to analysis of algorithms; sets, relations, and functions and their applications in databases, functional programming, and automata.
+
+CSC 2720	Data Structures
+Credit Hours	3.0
+Prerequisites	CSC 1302, MATH 2211, and CSC 2510 or MATH 2420 with grades of "C" or higher
+Description	
+Basic concepts and analysis of data representation and associated algorithms, including linerarly-linked lists, multi-linked structures, trees, searching, and sorting.
+
+CSC 2920	Ethical and Social Issues in Computing
+Credit Hours	3.0
+Prerequisites	CSC 1301 and CSC 1302 with a C or higher or permission of the department
+Description	
+This course is dedicated to the study of social, ethical, and legal effects of computing on society and its users. Ethical concepts, professional codes of ethics, and the influence of computing on individuals, organizations, and the global economy will be addressed. Students will utilize critical thinking and problem solving skills to analyze and debate case studies on topics some of which include privacy; intellectual property; computer crimes; system failures and implications; and, the impact of technology on society.
+
+CSC 3210	Computer Organization and Programming
+Credit Hours	4.0
+Prerequisites	CSC 1302, and CSC 2510 or MATH 2420 with A C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course introduces the principles of computer architecture and assembly and machine language. Topics include principles of computer architecture, binary and hexadecimal arithmetic, signed and unsigned arithmetic, memory organization, addressing modes, procedure calls, the stack frame, floating point unit and instruction encoding, as well as writing assembly language programs. The course also covers the basics of CISC vs. RISC architecture and parallel architecture models and programming.
+
+CSC 3320	System-Level Programming
+Credit Hours	3.0
+Prerequisites	CSC 1302, and CSC 2510 or MATH 2420 with grades of "C" or higher.Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course
+Description	
+An introduction to programming at the level of the operating system. Topics include editors, system calls, programming tools, files, processes, interprocess communication, and shells.
+
+CSC 4110	Introduction to Embedded Systems Laboratory
+Credit Hours	4.0
+Prerequisites	CSC 3320 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. (Same as PHYS 4110.) Four lecture hours per week. Topics taken from: review of basic logic functions; automatic systems; microprocessor- based systems and applications; embedded system software survey; microprocessor-based applications; digital communications; and embedded systems programming.
+
+CSC 4120	Introduction to Robotics
+Credit Hours	4.0
+Prerequisites	CSC 3210 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. The course focuses on programming robots. We will use robotic kits for the hardware, and program them using state-of-the-art languages, such as NQC.
+
+CSC 4210	Computer Architecture
+Credit Hours	4.0
+Prerequisites	CSC 3210 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Logic design, combinatorial and sequential circuits, input-output devices, memory, processors, controllers, parallel architectures, bit-slicing, reduced instruction sets.
+
+CSC 4220	Computer Networks
+Credit Hours	4.0
+Prerequisites	CSC 3320 and either MATH 3020 or MATH 3030 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Introduction to computer networks; details of layered network protocols with emphasis on functionality and analysis. Principles of relevant state-of-the-art network standards.
+
+CSC 4221	Wireless Networks & Mobile Computing
+Credit Hours	4.0
+Prerequisites	CSC 2720 and CSC 3320 with grades of "C" or higher.Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course
+Description	
+Introduction to wireless communication networks and mobile computing. Topics include: wireless communications technology; communication protocols in wireless networks; representative network types such as cellular wireless networks, wireless LANs, wireless ad hoc networks and wireless sensor networks, and mobile communication systems.
+
+CSC 4222	Cyber Security
+Credit Hours	4.0
+Prerequisites	CSC 2720 and CSC 3320 with grades of "C" or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course provides an initial overview on the topic of Information Security. It covers the basics of encryption and decryption, program security including viruses and other malicious code, application security, security in operating systems, security in networks and distributed systems, different methods of administering security, and legal and ethical issues in computer security.
+
+CSC 4223	Privacy
+Credit Hours	4.0
+Prerequisites	CSC 2720 and either MATH 3020 or MATH 3030 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course will study privacy in a few settings where rigorous definitions and enforcement mechanisms are being developed. This includes statistical disclosure limitation, semantics and logical specification of privacy policies that constrain information flow and use, principled audit and accountability mechanisms for enforcing privacy policies, anonymous communication protocols, and other settings such as in social networks, location privacy and Web privacy.
+
+CSC 4224	Ethical Hacking
+Credit Hours	4.0
+Prerequisites	CSC 2720 (Data Structures) and CSC 3320 (System Level Programming)
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Introduction to the methods and techniques used by computer hackers for malicious activity and by penetration testers for defensive measures. Understanding of the techniques used by intruders will lead to the design of countermeasures for secure computer systems. Students will implement hands-on experiments to learn identification of vulnerabilities in servers, websites, wireless networks, and cryptologic systems.
+
+CSC 4225	Internetwork Programming
+Credit Hours	4.0
+Prerequisites	CSC 4220 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course provides students with an understanding of the Internet and details regarding the protocols used in the Internet. The students will also learn key components of network programming using the most widely-used application program interface, sockets. Topics to be covered include: Internet Protocol (IP), Transport Layer Protocol-Transmission Control Protocol (TCP), Transport Layer Protocol-User Datagram Protocol (UDP), and Unix/Linux Network Programming.
+
+CSC 4226	Introduction to Software Security
+Credit Hours	4.0
+Prerequisites	CSC 2720 Data Structure and CSC 3320 System-Level Programming with grades of C or better
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course is a study of the foundation of software security. Students will learn the characteristics of secure software, the role of security in the development lifecycle, designing secure software, best security programming practices, security for web applications, static analysis techniques, and software security testing.
+
+CSC 4250	Malware Analysis and Defense
+Credit Hours	4.0
+Prerequisites	CSC 3210 Computer Organization and Programming, CSC 2720 Data Structure
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course will introduce students to the fundamentals of malware analysis and defense techniques. Using hands-on-experience students will attain an understanding of identifying the functionalities and behaviors of malicious software. Students will use a disassembler to decompose, execute, and trace each line of a program. They will also learn how to patch the executable file and modify its behavior for a more secure outcome. Students will also have the chance to examine the effects of different types of malicious software that run either natively on a Windows or a Linux platforms. Students will learn how to defend a system by tracing back the infection and identifying the vulnerability used to exploit and implant the malicious software within the system.
+
+CSC 4251	Computer Forensics
+Credit Hours	4.0
+Prerequisites	CSC 2720 (Data Structures) and CSC 3320 (System Level Programming)
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course teaches how to obtain and analyze digital information for possible use as evidence in civil, criminal or administrative cases. The course covers the recovery and analysis of digital evidence, addressing legal and technical issues. Topics include applications of hardware and software to computer forensics, computer forensics law, volume and file system analysis, computer forensics investigations, and computer forensics in the laboratory.
+
+CSC 4260	Digital Image Processing
+Credit Hours	4.0
+Prerequisites	CSC 2720 with grade of "C" or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Fundamentals of image processing, including image digitization, description, enhancement, segmentation, image transforms, filtering, restoration, coding, and retrieval. Concepts are illustrated by laboratory sessions in which these techniques are applied to practical situations, including examples from industrial and biomedical image processing.
+
+CSC 4270	Digital Signal Processing
+Credit Hours	4.0
+Prerequisites	CSC 4210 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course covers the nature of information, signals, transforms, and applications. Topics include analog to digital and digital to analog conversion, data storage (such as the audio format MP3), data transforms, and filters. Applications include noise reduction, signal analysis, volume control (e.g., audio signals), and compression. We will be using computer programs to handle mathematical modeling and calculations.
+
+CSC 4310	Parallel and Distributed Computing
+Credit Hours	4.0
+Prerequisites	CSC 3210 and CSC 3320 with grades of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Introduction to various parallel and distributed computing paradigms, algorithms, architectures, programming environments, and tools. Hands-on programming on both shared-memory and message-passing parallel architectures.
+
+CSC 4320	Operating Systems
+Credit Hours	4.0
+Prerequisites	CSC 3320 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Introduction to operating systems concepts. Topics may include multiprogramming, resources allocation and management, and their implementation.
+
+CSC 4330	Programming Language Concepts
+Credit Hours	4.0
+Prerequisites	CSC 2720, CSC 3210, and CSC 3320 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Fundamental programming language concepts, including syntax versus semantics, binding time, scopes, and storage management.
+
+CSC 4340	Compilers
+Credit Hours	4.0
+Prerequisites	CSC 2720 and CSC 3210 with grades of "C" or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Survey of topics related to compiler design, including parsing, table processing, code generation, and optimization.
+
+CSC 4350	Software Engineering – CTW
+Credit Hours	4.0
+Prerequisites	CSC 4520 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course focuses on techniques used in large scale scientific or technical software development, including requirements analysis, specification, systems design, implementation, testing, validation, verification, and maintenance. Serves as the Critical Thinking Through Writing (CTW) course, as well as the capstone experience, required of all Computer Science majors.
+
+CSC 4360	Mobile Application Development
+Credit Hours	4.0
+Prerequisites	CSC 2720 with a grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Crosslisted with CSC 6360. This course will cover the technologies, tools, frameworks and languages that are most commonly used in developing mobile applications for multiple mobile platforms. Topics include mobile application design, user interfaces, mobile application demographic and platform delivery, mobile networking, hosting infrastructure, and mobile security.
+
+CSC 4370	Web Programming
+Credit Hours	4.0
+Prerequisites	CSC 3320 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. The course introduces the student to programming techniques required to develop Web applications. Topics include: HTML forms, JavaScript, Servlets and Java Server Pages, PHP and MySQL, Web access to Oracle databases, and XML.
+
+CSC 4380	Windowing Systems Programming
+Credit Hours	4.0
+Prerequisites	CSC 3320 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Development of application software within windowed environments. Concepts of programming including graphical user interfaces, event-driven architectures, and object- oriented language programming with an application programming interface.
+
+CSC 4510	Automata
+Credit Hours	4.0
+Prerequisites	CSC 2720 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Theory of computing devices and the languages they recognize. Deterministic and non-deterministic finite automata, context-free grammars, pushdown automata, Turing machines and undecidability.
+
+CSC 4520	Design and Analysis of Algorithms
+Credit Hours	4.0
+Prerequisites	CSC 2720 and either MATH 3020 or MATH 3030 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Techniques for designing efficient algorithms; analysis of algorithms; lower bound arguments; algorithms for sorting, selection, graphs, and string matching.
+
+CSC 4610	Numerical Analysis I
+Credit Hours	3.0
+Prerequisites	MATH 2215 with grade of C or higher and the ability to program in a high-level language
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. (Same as MATH 4610.) Nature of error; iteration; techniques for nonlinear systems; zeros of functions; interpolation; numerical differentiation; Newton-Cotes formulae for definite integrals; computer implementation of algorithms.
+
+CSC 4620	Numerical Analysis II
+Credit Hours	3.0
+Prerequisites	Either MATH 3030 or both MATH 2641 and MATH 2215 with grades of C or higher, and the ability to program in a high level language
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. (Same as MATH 4620.) Gaussian Elimination for linear systems; least squares; Taylor, predictor-corrector and Runge- Kutta methods for solving ordinary differential equations; boundary value problems; partial differential equations.
+
+CSC 4630	Matlab
+Credit Hours	4.0
+Prerequisites	MATH 3030 with a grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course is designed to give science majors experience with the Matlab programming language. Matlab is used for scientific applications involving images, sound, and other signals. No previous programming experience is needed.
+
+CSC 4650	Introduction to Bioinformatics
+Credit Hours	4.0
+Prerequisites	CSC 2720, BIOL 1103K, [or BIOL 1103 and BIOL 1103L] and CHEM 1211K [or CHEM 1211 and CHEM 1211L] with grades of "C" or higher.Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course
+Description	
+The explosion in biological knowledge due to various genome projects and other high-throughput techniques has created entirely new fields and industries, and a need for trained computational biologists who are familiar with Biology, Statistics, and Computer Science. This course will introduce principles underlying current techniques in the analysis of different kinds of biological data. Topics include: sequence alignment, database searching, microarrays, structure analysis, and phylogenetic tree algorithms.
+
+CSC 4710	Database Systems
+Credit Hours	4.0
+Prerequisites	CS 2720 with grade of "C" or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. An introduction to the fundamental concepts and principles that underlie the relational model of data. Topics include formal query languages; SQL; query optimization; relational database design theory; physical database design, integrity, security, and concurrency control.
+
+CSC 4720	Human-Computer Interaction
+Credit Hours	4.0
+Prerequisites	CSC 3320 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Techniques and methodologies for development of user interfaces in software systems; topics include interaction styles, interaction devices, user documentation, and interface assessment.
+
+CSC 4730	Data Visualization
+Credit Hours	4.0
+Prerequisites	CSC 3320 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Data visualization or displaying data in visual forms and is closely related to data analytics. In this class, students will study the theories of data visualization, design principles, and data visualization techniques. Students will learn the various tools for creating interactive data visualizations, such as charts, maps, graphs and specialized data visualizations. (Same as CMIS 4200.).
+
+CSC 4740	Data Mining
+Credit Hours	4.0
+Prerequisites	CSC 2720 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Introduction to basic data mining techniques (such as association rules mining, cluster analysis, and classification methods) and their applications (such as Web data mining, biomedical data mining and security).
+
+CSC 4750	Semantic Web
+Credit Hours	4.0
+Prerequisites	CSC 2720 with a grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Crosslisted with CSC 6750. In-depth overview of the Semantic Web and how it can be applied. Major topics include core technical components and language constructs for the Semantic Web, linked data concepts/projects and RDF triple stores, and real world semantic Web applications.
+
+CSC 4760	Big Data Programming
+Credit Hours	4.0
+Prerequisites	CSC 2720 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Crosslisted with CSC 6760. This course will cover the technologies, tools, frameworks and languages that are most commonly used in Big Data Programming. Focus will be on algorithms for analyzing and mining massive datasets, graphs and social network data. Topics include the storage, management, processing and analysis of massive datasets, as well as Big Data governance, security, and privacy issues.
+
+CSC 4780	Fundamentals of Data Science
+Credit Hours	4.0
+Prerequisites	CSC 2720 with a C or better
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Introduction to the fundamental concepts of predictive data science for tabular data with qualitative and quantitative scales. Topics include: data exploration, pre-processing and visualization; analytics base table (ABT) generation; basic supervised learning algorithms (i.e. information-based learning, similarity-based learning, and error-based learning), and comparative evaluation of these algorithms.
+
+CSC 4810	Artificial Intelligence
+Credit Hours	4.0
+Prerequisites	CSC 2720 with a C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. An overview of techniques and methodologies in the field of artificial intelligence. Topics may include search strategies, problem solving, natural language processing, logic and deduction, memory models, learning, expert systems, knowledge representation, and robotics.
+
+CSC 4820	Interactive Computer Graphics
+Credit Hours	4.0
+Prerequisites	CSC 3320 with grade of "C" or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course will introduce students to 3D computer graphics and game programming. Students will learn how to develop 3D games and interactive computer graphics applications (such as virtual reality) using game engines. The topics include rendering, lighting, camera, sound, character control, animation, and physics. (Same as CMIS 3150.).
+
+CSC 4821	Fundamentals of Game Design
+Credit Hours	4.0
+Prerequisites	CSC 3320 with grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Covers major aspects of game design such as challenges, gameplay, actions, core mechanics, worlds, characters, game balancing, user interfaces, and game genres.
+
+CSC 4840	Advanced Computer Graphics Programming
+Credit Hours	4.0
+Prerequisites	CSC 3320 with a grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Students will learn advanced 3D graphics and game programming. The topics will include rendering, lighting, camera, animation, user interaction, physics simulation, game AI, and GPU. (Same as CMIS 4120.).
+
+CSC 4841	Computer Animation
+Credit Hours	4.0
+Prerequisites	CSC 3320 with a grade of C or higher
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. The basics of three-dimensional computer animation including 3D modeling, lighting, texture mapping, key framing, character animation, rigid and soft body dynamics, particles, cloth, hair, fluid, etc.
+
+CSC 4850	Machine Learning
+Credit Hours	4.0
+Prerequisites	CSC 4520 with a grade of C or better
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course is intended to provide a general introduction to machine learning. This course will cover the fundamental concepts and principles of supervised learning, unsupervised learning, semi-supervised learning and reinforcement learning. Students will understand the basic knowledge of machine learning, be familiar with classic machine learning algorithms, and gain experience of designing and implementing methods in real scenario. 4.000 Credit hours.
+
+CSC 4870	Honors Thesis I
+Credit Hours	1.0 - 6.0
+Prerequisites	Good standing with the Honors College and consent of instructor
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Readings or research preparatory to honors thesis or project. Signature Experience course.
+
+CSC 4880	Honors Thesis II
+Credit Hours	1.0 - 6.0
+Prerequisites	Good standing with the Honors College and consent of instructor.Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course
+Description	
+Writing or production of honors thesis or project. Signature Experience course.
+
+CSC 4940	Computer Science Internship
+Credit Hours	1.0 - 2.0
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. This course will require students to document and present the project they worked on during their internship. Students are able to register for the course at most 2 times for a maximum total of 4 credit hours to count towards their degree (excluding Area G). This course may include a Signature Experience component.
+
+CSC 4980	Topics in Computer Science
+Credit Hours	4.0
+Prerequisites	Consent of Instructor
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Selected topics in Computer Science will be covered. Topics include the latest advances in computing.
+
+CSC 4982	Undergraduate Research in Computer Science
+Credit Hours	4.0
+Prerequisites	at least 12 upper-division hours in computer science
+Description	
+Authorization required. Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Independent investigation of topics of common interest to student and instructor. This course may include a Signature Experience component.
+
+CSC 4995	Directed Readings B.I.S.-CTW
+Credit Hours	3.0 - 4.0
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Directed Readings designed for Bachelor of Interdisciplinary Studies students. This course may satisfy the junior and/or senior-level Critical Thinking Through Writing requirements.
+
+CSC 4998	Selected Topics
+Credit Hours	1.0 - 4.0
+Prerequisites	consent of instructor
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. No more than six credit hours may be applied toward the major. May be repeated if topics are different.
+
+CSC 4999	Directed Readings
+Credit Hours	1.0 - 4.0
+Prerequisites	GPA of 3.0 or higher and consent of instructor
+Description	
+Students must meet the Computer Science Major Eligibility Requirement in order to enroll in this course. Directed study with a faculty member. 
