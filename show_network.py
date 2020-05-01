@@ -2,15 +2,24 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
+import pandas as pd
+
+df = pd.read_csv('generated_csv/' +
+                 'CSC' +
+                 '.csv',encoding='unicode_escape')
+pd.options.display.width = 1200
+pd.options.display.max_colwidth = 1000
+pd.options.display.max_columns = 100
+print(str(df[df['code']=='CSC_4520']['Description']))
+
 app = dash.Dash()
 
-
 app.layout = html.Div(children=[
-    #html.H1(children='Hello Dash'),
+    # html.H1(children='Hello Dash'),
 
     html.Div(
         [
-            dcc.Graph(id='example') # or something other than Graph?...
+            dcc.Graph(id='example')  # or something other than Graph?...
         ],
     ),
 
@@ -24,11 +33,11 @@ app.layout = html.Div(children=[
 
 ])
 
+
 @app.callback(
     dash.dependencies.Output('example', 'figure'),
     [dash.dependencies.Input('n_points', 'value')]
 )
-
 def update_figure(n_points):
     # This example shows how to draw a NetworkX graph in Plotly.
 
@@ -47,8 +56,7 @@ def update_figure(n_points):
     pos = nx.planar_layout(G)       #nice
     pos = nx.spiral_layout(G)       #nice
     '''
-    pos = nx.nx_pydot.graphviz_layout(G, prog='dot')         #nice
-
+    pos = nx.nx_pydot.graphviz_layout(G, prog='dot')  # nice
 
     # Retrieve the coordinates of the nodes and store them
     # in two separate edge lists: one for X coordinates
@@ -81,21 +89,29 @@ def update_figure(n_points):
     # Create a node list
     node_x = []
     node_y = []
+    descriptions = []
     for node in G.nodes():
         # Saving node coordinates to the node list.
         x = pos[node][0]
         y = pos[node][1]
         node_x.append(x)
         node_y.append(y)
+        descriptions.append(str(df[df['code']==node]['Description']))
 
+
+    print(list(G.nodes))
     # Create a scatter plot to draw all the nodes.
     node_trace = go.Scatter(
         x=node_x,
         y=node_y,
         mode="markers + text",  # Show both markers and labels
         text=list(G.nodes),  # The texts will be the labels of the nodes
+
         textposition="middle left",  # Place the text to the left of the node
-        hoverinfo="text",  # Tooltip will be from the "text" argument
+
+        hovertext =list(descriptions),
+        #hoverinfo= 'name',  # Tooltip will be from the "text" argument
+
         marker=dict(
             size=10,
             color="Red",
@@ -104,7 +120,7 @@ def update_figure(n_points):
 
     fig = go.Figure(data=[edge_trace, node_trace],
                     layout=go.Layout(
-                        #title="A NetworkX Graph Rendered with Plotly",
+                        # title="A NetworkX Graph Rendered with Plotly",
                         titlefont_size=16,
                         showlegend=False,
                         xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
@@ -116,6 +132,7 @@ def update_figure(n_points):
         height=1000
     )
     return fig
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
