@@ -4,13 +4,32 @@ import dash_html_components as html
 
 import pandas as pd
 
+def add_br_to_long_string(long_string):
+    character_index = 0
+    formatted_string = ''
+    how_many_lines = len(long_string)/50
+    long_string = long_string.replace('Name: Description, dtype: object','')
+    for i in range(0,int(how_many_lines)+1):
+        #print(i)
+        formatted_string += long_string[(character_index+i*4):(character_index+4*i+50)]+'<br>'
+        character_index += 46
+    return formatted_string
+'''
+print(('If the index pos_i is very small (too negative), the insert string gets prepended. If too long, the insert string gets appended. If pos_i is between -len(string_s) and +len(string_s) - 1, the insert string gets inserted into the correct place.'))
+print(add_br_to_long_string('If the index pos_i is very small (too negative), the insert string gets prepended. If too long, the insert string gets appended. If pos_i is between -len(string_s) and +len(string_s) - 1, the insert string gets inserted into the correct place.'))
+'''
+
+
+pd.options.display.max_colwidth = 500
 df = pd.read_csv('generated_csv/' +
                  'CSC' +
                  '.csv',encoding='unicode_escape')
-pd.options.display.width = 1200
-pd.options.display.max_colwidth = 1000
-pd.options.display.max_columns = 100
-print(str(df[df['code']=='CSC_4520']['Description']))
+for description in df['Description']:
+    description = add_br_to_long_string(str(description))
+
+print(add_br_to_long_string(str(df[df['code']=='CSC_4520']['Description'])))
+
+
 
 app = dash.Dash()
 
@@ -96,7 +115,7 @@ def update_figure(n_points):
         y = pos[node][1]
         node_x.append(x)
         node_y.append(y)
-        descriptions.append(str(df[df['code']==node]['Description']))
+        descriptions.append(add_br_to_long_string(str(df[df['code']==node]['Description'])))
 
 
     print(list(G.nodes))
