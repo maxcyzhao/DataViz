@@ -27,7 +27,7 @@ df = pd.read_csv('generated_csv/' +
 for description in df['Description']:
     description = add_br_to_long_string(str(description))
 
-print(add_br_to_long_string(str(df[df['code']=='CSC_4520']['Description'])))
+print(add_br_to_long_string(str(df[df['code']=='CSC_4520']['Description'].values[0])))
 
 
 
@@ -115,15 +115,27 @@ def update_figure(n_points):
         y = pos[node][1]
         node_x.append(x)
         node_y.append(y)
-        descriptions.append(add_br_to_long_string(str(df[df['code']==node]['Description'])))
+        descriptions.append(
+            str(df[df['code'] == node]['name'].values)[2:-2] +
+            '<br>Departement:'+
+            str(df[df['code'] == node]['department'].values)[2:-2] +
+            '<br>Code:'+
+            str(node)+
+            '<br>Credit Hour:'+
+            str(df[df['code'] == node]['Credit Hours'].values)[2:-2] +
+            '<br>Prerequistite:'+
+            add_br_to_long_string(str(df[df['code'] == node]['Prerequisites'].values))[2:-2] +
+            '<br>Description:<br>' +
+            add_br_to_long_string(str(df[df['code']==node]['Description'].values))[2:-2]
+        )
 
+    #print(list(G.nodes))
 
-    print(list(G.nodes))
     # Create a scatter plot to draw all the nodes.
     node_trace = go.Scatter(
         x=node_x,
         y=node_y,
-        mode="markers + text",  # Show both markers and labels
+        mode="markers+text",  # Show both markers and labels
         text=list(G.nodes),  # The texts will be the labels of the nodes
 
         textposition="middle left",  # Place the text to the left of the node
@@ -133,7 +145,7 @@ def update_figure(n_points):
 
         marker=dict(
             size=10,
-            color="Red",
+            color="white",
             line_width=2)
     )
 
