@@ -16,7 +16,10 @@ course_df = pd.DataFrame(
 )
 
 
-def check_string(many_lines, department, df):
+pd.options.display.max_colwidth = 500
+
+
+def check_string_f(many_lines, department, df):
     list_o_lines = list(many_lines[0])
     # print(type(list_o_lines))
     row_n = 0
@@ -194,13 +197,37 @@ def append_gv_file_from_txt_import_data_write_to_dataset_then_add_node_n_edge(de
         'course_txt_from_html/' +
         str(department) +
         '.txt', sep="\n", header=None)
-    check_string(data, str(department), course_df)
+    check_string_f(data, str(department), course_df)
+    preprocessing_description_in_df(course_df)
     make_department_parent_nodes_edge(default_gv_filename, str(department))
     add_node_from_df(default_gv_filename, course_df)
     make_prerequisite_edge_from_df(default_gv_filename, course_df)
 
+
+def add_br_to_long_string(long_string):
+    character_index = 0
+    formatted_string = ''
+    how_many_lines = len(long_string) / 50
+    long_string = long_string.replace('Name: Description, dtype: object', '')
+    for i in range(0, int(how_many_lines) + 1):
+        # print(i)
+        formatted_string += long_string[(character_index + i * 4):(character_index + 4 * i + 50)] + '<br>'
+        character_index += 46
+    return formatted_string
+
+
+'''
+print(('If the index pos_i is very small (too negative), the insert string gets prepended. If too long, the insert string gets appended. If pos_i is between -len(string_s) and +len(string_s) - 1, the insert string gets inserted into the correct place.'))
+print(add_br_to_long_string('If the index pos_i is very small (too negative), the insert string gets prepended. If too long, the insert string gets appended. If pos_i is between -len(string_s) and +len(string_s) - 1, the insert string gets inserted into the correct place.'))
+'''
+
+
+def preprocessing_description_in_df(df):
+    for description in df['Description']:
+        description = add_br_to_long_string(str(description))
+
 print(course_df)
 
-iniate_gv_file_from_txt_import_data_write_to_dataset_then_add_node_n_edge('CSC')
+#iniate_gv_file_from_txt_import_data_write_to_dataset_then_add_node_n_edge('CSC')
 #append_gv_file_from_txt_import_data_write_to_dataset_then_add_node_n_edge('MATH')
 #append_gv_file_from_txt_import_data_write_to_dataset_then_add_node_n_edge('BIOL')

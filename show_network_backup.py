@@ -3,62 +3,6 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 import pandas as pd
-from dash.dependencies import State, Input, Output
-
-import functions1
-
-
-
-app = dash.Dash()
-
-app.layout = html.Div(children=[
-    # html.H1(children='Hello Dash'),
-
-    # html.H1(children='Hello Dash'),
-    html.I(
-        "instruction: FIRST select department code, THEN, CLICK SUBMIT. if nothing happens, drag the slide under submit button to refresh page   :"
-    ),
-
-    html.Div(),  # br
-    dcc.Dropdown(
-        id='department',
-        options=[
-            {'label': 'ACCOUNTING', 'value': 'ACCT'},
-            {'label': 'CHEMISTRY', 'value': 'CHEM'},
-            {'label': 'PHYSICS', 'value': 'PHYS'},
-            {'label': 'COMPUTER SCIENCE', 'value': 'CSC'},
-            {'label': 'MATHMETHICS', 'value': 'MATH'},
-            {'label': 'BIOLOGY', 'value': 'BIOL'}
-        ],
-        value='CSC'
-    ),
-    html.Div(),  # br
-    html.Div(id='textarea-example-output', style={'whiteSpace': 'pre-line'}),
-
-    html.Div(
-        [
-
-            html.Button('Submit', id='submit_raw_text', n_clicks=0),
-        ]
-    ),
-
-    dcc.Slider(
-        id='n_points',
-        min=10,
-        max=100,
-        step=1,
-        value=50,
-    ),
-    html.Div(
-        [
-            dcc.Graph(id='example')  # or something other than Graph?...
-        ],
-    ),
-
-
-    html.Div(id="table1")
-])
-
 
 
 def add_br_to_long_string(long_string):
@@ -80,10 +24,57 @@ print(add_br_to_long_string('If the index pos_i is very small (too negative), th
 
 pd.options.display.max_colwidth = 500
 df = pd.read_csv('generated_csv/' +
-                 'CSC' 
+                 'CSC' +
                  '.csv', encoding='unicode_escape')
 for description in df['Description']:
     description = add_br_to_long_string(str(description))
+
+print(add_br_to_long_string(str(df[df['code'] == 'CSC_4520']['Description'].values[0])))
+
+app = dash.Dash()
+
+app.layout = html.Div(children=[
+    # html.H1(children='Hello Dash'),
+
+    # html.H1(children='Hello Dash'),
+    html.I(
+        "enter department code   :"
+    ),
+
+    html.Div(),  # br
+    dcc.Textarea(
+        id='department',
+        # value='this is where you specify department',
+        value='CSC',
+        style={'width': '50%', 'height': 30},
+    ),
+    html.Div(),  # br
+    html.Div(id='textarea-example-output', style={'whiteSpace': 'pre-line'}),
+
+    html.Div(
+        [
+
+            html.Button('Submit', id='submit_raw_text', n_clicks=0),
+        ]
+    ),
+
+    html.Div(
+        [
+            dcc.Graph(id='example')  # or something other than Graph?...
+        ],
+    ),
+
+    dcc.Slider(
+        id='n_points',
+        min=10,
+        max=100,
+        step=1,
+        value=50,
+    ),
+
+    html.Div(id="table1")
+])
+
 
 @app.callback(
     dash.dependencies.Output('example', 'figure'),
@@ -197,17 +188,5 @@ def update_figure(n_points):
     return fig
 
 
-@app.callback(
-    Output('table1', 'children'),
-    [Input('submit_raw_text', 'n_clicks')],
-     [State('department', 'value')]
-)
-def update_output(n_clicks,  department_value):
-    if n_clicks <1:
-        functions1.iniate_gv_file_from_txt_import_data_write_to_dataset_then_add_node_n_edge(department_value)
-    else:
-        functions1.append_gv_file_from_txt_import_data_write_to_dataset_then_add_node_n_edge(department_value)
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run_server(debug=True)
