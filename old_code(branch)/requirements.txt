@@ -46,7 +46,7 @@ textblob==0.15.3
 tornado==6.0.4
 tweepy==3.8.0
 Unidecode==1.1.1
-urllib3==1.25.9
+urllib3==1.26.5
 wcwidth==0.1.9
 Werkzeug==1.0.1
 wincertstore==0.2
